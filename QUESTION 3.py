@@ -1,15 +1,21 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 
-# CREATING EMPTY DICTIONARY
-Dict = {
+# FUNCTION FOR CONVERTING STRING TO LIST
+def StringToList(String):
+    List1=[]
+    List1[:0]=String
+    return List1
 
-}
+# TAKING THE INDEX AND THE STRING INPUT
+String1 = input('Enter a string : \n')
+Index = int(input('Enter an index : \n'))
 
-# TAKING A NUMBER FROM THE USER
-Num = int(input("Please enter a number : "))
+# CONVERTING STRING TO LIST
+String2 = StringToList(String1)
 
-for i in range(1,Num + 1):
-    Dict[i] = i * i
+# DELETING THE INDEX
+del String2[Index]
 
-print(Dict)
+String2 = "".join(String2)
+print(String2)
