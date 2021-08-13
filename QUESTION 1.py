@@ -7,7 +7,7 @@ List = []
 #                BEGIN/END
 for Num in range(2000,3201):
     # CHECKING THE CONDITION
-    if Num % 7 == 0 and Num % 5:
+    if Num % 7 == 0 and Num % 5 != 0:
         List.append(Num)
 
 # PRINTING THE NUMBERS IN A LIST
